@@ -70,7 +70,7 @@ log.debug(f'Public URL prefix is {link_prefix}')
 log.debug(f'allowed user ids {allowed_user}')
 log.debug(f'Debug={debug},show_index={show_index}')
 
-scheduler = BackgroundScheduler()
+scheduler = BackgroundScheduler(timezone='Asia/Shanghai')
 
 try:
     if keep_awake:
